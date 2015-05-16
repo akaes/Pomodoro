@@ -36,9 +36,9 @@ def pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count):
         print "Back to work..."
 
     	t = Twitter(
-    	    auth=OAuth('103794514-i2Hnd6lKAIuLScvVsMuwOfaZtMvu7axvoPxcKqqh', 'RV4l9ws3BU9svsD78V2IBGohswBXg0ywEIETmHRqnn2N9', 'hVgZWLo6Ob4NECTq05LsGQR4R', 'kPmmhcKWLY3o4cLN94YcOYduHRvz4YewU81Pgq4EoGbUCgPlXQ'))
+    	    auth=OAuth('???', '???', '???', '???'))
     	t.direct_messages.new(
-        user="@a_ka_es",
+        user="@???",
         text = ("WEITERMACHEN. Besser ist."))
         
         #start long break
