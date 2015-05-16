@@ -1,7 +1,7 @@
 #EXPLANATION
 
 ###TEST ENVIRONMENT:
-Mac OS X , Python 2.7.6
+Mac OS X, Python 2.7.6
 
 ##TASK:
 Tool for [Pomodoro-Technique](http://en.wikipedia.org/wiki/Pomodoro_Technique)
