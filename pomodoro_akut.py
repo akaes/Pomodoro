@@ -29,7 +29,7 @@ def pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count):
 
     	t.direct_messages.new(
         user="@???",
-        text = ("IFAM. SOFORT. UNBEDINGT."))
+        text = ("BEWEGEN. SOFORT. UNBEDINGT."))
 
         time.sleep(60*int(short_brk))
         
@@ -62,12 +62,12 @@ def pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count):
     print "Back to work..."
     
     t = Twitter(
-    	auth=OAuth('???','???','???','???'
+    	auth=OAuth('???','???','???','???'))
     t.direct_messages.new(
     user="@???",
-    text="Noch eine Runde?"))
+    text=("Noch eine Runde?"))
     
-stop pomodori/start new pomodori
+#stop pomodori/start new pomodori
     
 def wrapper():
     pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count)
