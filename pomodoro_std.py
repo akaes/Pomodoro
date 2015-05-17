@@ -41,30 +41,26 @@ def pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count):
         user="@???",
         text = ("WEITERMACHEN. Besser ist."))
         
-        #start long break
+     #start long break
 
-        print "Well done. Take long %d min break" % long_brk
+     print "Well done. Take long %d min break" % long_brk
 
-    	t = Twitter(
-    	    auth=OAuth('???', '???', '???', '???'))
-    	t.direct_messages.new(
-        user="@???",
-        text = ("BREAK! Lange Pause, sofort. LOS."))
-
-        time.sleep(60*int(long_brk))
+     t = Twitter(
+     auth=OAuth('???', '???', '???', '???'))
+     t.direct_messages.new(
+     user="@???",
+     text = ("BREAK! Lange Pause, sofort. LOS."))
+     time.sleep(60*int(long_brk))      
+     #stop long break
         
-        #stop long break
-        
-        print "Back to work..."        
-
-    	t = Twitter(
-    	    auth=OAuth('???', '???', '???', '???'))
-    	t.direct_messages.new(
-        user="@???",
-        text = ("Noch eine Runde?"))
+     print "Back to work..."        
+     t = Twitter(
+     auth=OAuth('???', '???', '???', '???'))
+     t.direct_messages.new(
+     user="@???",
+     text = ("Noch eine Runde?"))
             
 #stop pomodori/start new pomodori
-
 def wrapper():
     pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count)
     print("A pomodori finished. Again?(y/n)")
