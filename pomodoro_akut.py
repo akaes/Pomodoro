@@ -7,14 +7,14 @@ import sys
 import webbrowser
 from twitter import *
 
-duration = 20 #Dauer für ein Pomodoro/duration of one pomodoro
-short_brk = 15 #Länge einer kurzen Pause/short break duration
-long_brk = 30 #Länge einer langen Pause/long break duration
-one_pomodori = 5 #Anzahl der Pomodori/number of pomodori
+duration = input("Dauer für ein Pomodoro in min: ") #Dauer für ein Pomodoro/duration of one pomodoro
+short_brk = input("Länge einer kurzen Pause in min: ") #Länge einer kurzen Pause/short break duration
+long_brk = input("Länge einer langen Pause in min: ") #Länge einer langen Pause/long break duration
+one_pomodori = input("Anzahl der auszuführenden Pomodori: ") #Anzahl der Pomodori/number of pomodori
 duration_count = duration
 
 def pomodoro(one_pomodori,short_brk,long_brk,duration,duration_count):
-    for i in range(1,one_pomodori):
+    for i in range(one_pomodori):
         duration = duration_count
         while duration > 0:
             print "%d min working..." % int(duration_count - duration)
