@@ -1,4 +1,4 @@
-#EXPLANATION
+#EXPLANATION - Update: Twitter-API has changed and the Script needs an update
 
 ###TEST ENVIRONMENT:
 Mac OS X, Python 2.7.6
